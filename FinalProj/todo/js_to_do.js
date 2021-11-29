@@ -1,11 +1,11 @@
 //backend storage
 // Use the StorageKey to access the data
-var storage = localStorage.getItem('StorageKey');
+var storage1 = localStorage.getItem('StorageKey1');
 
 //if storage is not empty/if there is something in storage 
-if(storage !== null){ 
+if(storage1 !== null){ 
   //converting JSON String -> Javascript object
-  var data = JSON.parse(storage); 
+  var data = JSON.parse(storage1); 
 
   loadData(data);
   var id = data.length; 
@@ -50,7 +50,7 @@ document.body.onkeyup = function(e) {
     newItem(todo, false, id);
     data.push({name: todo, trash: false, id: id});
 
-    localStorage.setItem("StorageKey", JSON.stringify(data))
+    localStorage.setItem("StorageKey1", JSON.stringify(data))
     id = id + 1;
   }
 };
@@ -59,6 +59,6 @@ function removeItem(event) {
   element = event.target;
   element.remove();
   data[element.id].trash = true;
-  localStorage.setItem("StorageKey", JSON.stringify(data));
+  localStorage.setItem("StorageKey1", JSON.stringify(data));
 }
 
