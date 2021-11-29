@@ -31,10 +31,14 @@ function newItem(todo, trash, id) {
     }
     
     // create li and store ul in var    
-    var blockquote = document.createElement("blockquote");
     var today = new Date();
+    var date = "- "+today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate();
+    var blockquote = document.createElement("blockquote");
+    var p = document.createElement("p");
+    p.appendChild(document.createTextNode(todo));
     blockquote.appendChild(document.createTextNode
-        ("- "+today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate()+todo));
+      (date));
+    blockquote.appendChild(p);
         blockquote.setAttribute('id', id);
     const element = document.getElementById("list");
     element.appendChild(blockquote);
