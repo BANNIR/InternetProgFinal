@@ -1,0 +1,63 @@
+
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    margin-bottom: 3cm;
+}
+body {
+    max-width: 1850px;
+    text-align: center;
+}
+
+#input {
+    padding-top: 20px;
+    text-align: left;
+    width: 450px;
+    height: 60px;
+    font-size: 400px;
+    border: 0;
+    margin-bottom: 1cm;
+}
+
+citation {
+    font-size: 0.5cm;
+    left: auto;
+    padding: 0.3cm;
+    border: 2px solid rgb(115, 45, 226);
+    margin: 1cm;
+}
+
+input:focus {
+    outline: none;
+}
+
+citation:hover {
+    text-decoration: line-through;
+}
+#list {
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+#listItem {
+    position: absolute;
+    left: -450px;
+    padding: 0.7cm;
+    font-size: x-large;
+    border-style: solid;
+    border-color: rgb(115, 45, 226);
+    border-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+#input {
+    margin-top: 4cm;
+    margin-left: 0cm;
+    font-size: 0.5cm;
+    text-align: center;
+    width: 39cm;
+    height: 3cm;
+    padding-bottom: 0.5cm;
+    border: 2px solid rgb(115, 45, 226);
+    border-radius: 120cm;
+}
