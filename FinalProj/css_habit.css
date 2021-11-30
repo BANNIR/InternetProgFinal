@@ -1,0 +1,109 @@
+html{
+    margin-bottom: 100px;
+}
+  
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(210, 181, 219);
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: rgb(235, 220, 240);
+    border-radius: 15px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .habits {
+    text-align: left;
+    list-style: none;
+  }
+  
+  .habits li {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+  
+  .habits label {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .habits input {
+    margin-right: 12px;
+  }
+  
+  .habits input {
+    display: none;
+  }
+  
+  .habits input + label:before {
+    content: "+";
+    margin-right: 12px;
+  }
+  
+  .habits input + label span {
+    font-weight: 200;
+    font-size: 0.75rem;
+  }
+  
+  .habits input:checked + label {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.486);
+  }
+  
+  .habits button {
+    padding-left: 30px;
+    background: none;
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  .add-habit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .add-habit input {
+    padding: 10px;
+    margin: 5px;
+    outline: 0;
+    border: cadetblue 500;
+    border-radius: 100px;
+    color: purple;
+  }
+  
+  .add-habit select {
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .frequency {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.6cm;
+    margin-bottom: 0.3cm;
+    margin-left: 90%;
+    flex-direction: row;
+  }

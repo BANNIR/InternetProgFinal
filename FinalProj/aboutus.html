@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Take Care of Yourself</title>
+   <link href="css_layout.css" rel="stylesheet" />
+   <link href="About Us/aboutus.css" rel="stylesheet" />
+   
+</head>
+
+<body>
+    <header>
+        <nav class="horizontal">       
+            <ul>
+               <li><a href="main.html">Home</a></li>
+               <li><a href="to_do.html">To-Do</a></li>
+               <li><a href="journaling.html">Journaling</a></li>
+               <li><a href="habit.html">Habit Tracker</a></li>
+               <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+         </nav>  
+         <p id="logoImg"> Take Care Of Yourself</p>
+    </header>
+
+    <div id = "box">
+      <div id="box1">
+         <p>You can find our headquarters at the following address: </p>
+         <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.520270416687!2d-73.75487748417184!3d45.55997523506807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc923b8d3314787%3A0xf1e9253d01e9cf89!2s2075%20Bd%20Chomedey%2C%20Laval%2C%20QC%20H7T%200B2!5e0!3m2!1sen!2sca!4v1638225798714!5m2!1sen!2sca" allowfullscreen="" loading="lazy">hey</iframe>
+      </div>
+
+      <div id="box2">
+         <p>Twitter reviews!</p>
+         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">hey guys don&#39;t forget to take care of yourselves <a href="https://twitter.com/hashtag/takecareofyourself?src=hash&amp;ref_src=twsrc%5Etfw">#takecareofyourself</a> <a href="https://twitter.com/hashtag/SykkunoFanart?src=hash&amp;ref_src=twsrc%5Etfw">#SykkunoFanart</a></p>&mdash; yopbottleofficial (@mytweetteracco1) <a href="https://twitter.com/mytweetteracco1/status/1465471889057406977?ref_src=twsrc%5Etfw">November 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <div id="box3">
+         <p>Contact Us!</p>
+      </div>
+
+      <div id="box4">
+         <article id="contentstart">
+            <form class="contact-form">
+               <p class="form-instructions">All fields are required</p>
+               <fieldset class="contactinfo">
+                  <label for="nameinput">
+                     Name
+                     <input type="text" name="name" id="nameinput" required>
+                  </label>
+                  <label for="emailinput">
+                     Email
+                     <input type="email" name="email" id="emailinput" required>
+                  </label>
+               </fieldset>
+               <fieldset class="additionalinfo">
+                  <label for="other-info">
+                     Feedback or questions
+                     <textarea name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+                  </label>
+               </fieldset>
+               <fieldset class="submitbutton">
+                  <input type="submit" id="submit" value="Submit" onclick="change();">
+               </fieldset>
+            </form>
+         </article>
+      </div>
+
+   </div>
+
+    <div class="footer">
+         Made by Armen Jabamikos and Shahe Bannis
+      <div class="footer-content-right">
+         <a href="https://github.com/BANNIR/InternetProgFinal"><img src="github.jpeg" class="icon-style" alt="Github icon"></a>
+         <a href="https://twitter.com/hashtag/takecareofyourself?src=hashtag_click"><img src="twitter.jpeg" class="icon-style" alt="Twitter icon"></a>
+         <a href="mailto:takecareofyourself@gmail.com"><img src="email.jpeg" class="icon-style" alt="Emailicon"></a>
+       </div>
+   </div>
+</body>
+<script src = "About Us/aboutus_contact.js"></script>
+</html>
