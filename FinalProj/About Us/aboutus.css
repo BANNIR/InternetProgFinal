@@ -78,3 +78,14 @@ html{
 
     margin-bottom: 100px;
 }
+
+input {
+    border-radius: 1em;
+    border-width: 0.3cm;
+    border-color: rgb(153, 102, 235);
+}
+textarea {
+    border-radius: 1em;
+    border-width: 0.3cm;
+    border-color: rgb(130, 85, 204);
+}
